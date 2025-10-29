@@ -51,7 +51,7 @@ portfolio/
    ```bash
    git clone https://github.com/Jeanluc24/Luc.git
 
-  https://<Jeanluc24>.github.io/my_portfolio/
+  https://<jeanluc24>.github.io/Luc/
 
   ## 📷 Preview
 
