@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #080808;
+    color: #fff;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('Images/Untitled.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;  /* This will show your face properly */
+}
+
+.container{
+    margin: auto;
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;  /* Keep this minimal for nav to stay at top */
+    margin-top: 0;    /* Ensure no extra margin */
+}
+
+.logo{
+    margin: 0;
+}
+
+.logo h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Arial Black', sans-serif;
+    margin: 0;  /* Remove any default margin */
+}
+
+.logo span{
+    color: #ff3d00;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    margin: 0;  /* Remove default ul margin */
+    padding: 0;
+}
+
+nav ul li{ 
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+    position: relative;
+}
+
+nav ul li a:hover{
+    color: #ff3d00;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+nav ul li a::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: -6px;
+    position: absolute;
+    background: #ff3d00;
+    transition: width 0.3s;
+}
+
+.header-text{
+    margin-top: 15%;  /* Reduced from 20% */
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+    max-width: 60%;  /* Keeps text on left side */
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header-text h1 span{
+    color: #ff3d00;
+}
+
+/*----------------about section--------------------*/
+#about{
+    padding: 100px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about-col-1{
+    flex-basis: 33%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    padding-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ababab;
+    transition: 0.3s;
+}
+.tab-links::after{
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    transition: width 0.3s;
+}
+.tab-links.active-link::after{
+    width: 100%;
+}
+.tab-contents ul li{
+    margin-bottom: 10px;
+    font-size: 18px;
+    list-style: none;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+.tab-contents {
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/*------------------services section----------------*/
+#services{
+    padding: 80px 0;
+    color: #ababab;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 100px;
+    margin-top: 50px;
+}
+.services-list div{
+    background: #262626;
+    padding: 30px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    text-align: center;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+    color: #fff;
+}
+.services-list div h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 20px;
+    border: 2px solid #fff;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.services-list div p{
+    font-size: 16px;
+    line-height: 1.6;
+}
+.services-list div i{
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #fff;
+    transition: 0.3s;
+}
+.services-list div:hover i{
+    color: #fff;
+}
+/*------------------portfolio section------------------*/
+#portfolio{
+    padding: 80px 0;
+    color: #ababab;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.6s ease;
+}
+.layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 40px;
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(40px);  /* start slightly below */
+    transition: all 0.6s ease;
+}
+.layer h3{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+.layer a{
+    color: #ff004f;
+    font-size: 20px;
+    margin-top: 20px;
+    transition: color 0.3s;
+    text-decoration: none;
+    line-height: 60px;
+    background: #fff;
+    padding: 10px 15px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    
+
+}
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.work:hover .layer {
+    opacity: 1;
+    transform: translateY(0);  /* slide upward into view */
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    padding: 14px 50px;
+    border: 1px solid #ff004f;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background 0.3s, color 0.3s;
+
+}
+
+.btn:hover{
+    background: #ff004f;
+    color: #fff;
+}
+/*------------------contact section------------------*/
+#contact{
+    padding: 80px 0;
+    color: #ababab;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 1.6;
+} 
+.contact-left p i{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 20px;
+}
+.social-icons{
+    margin-top: 40px;
+}   
+.social-icons a{
+    text-decoration: none;
+    color: #ababab;
+    font-size: 20px;
+    margin-right: 30px;
+    transition: color 0.3s;
+    display: inline-block;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn.btn2{
+    padding: 14px 50px;
+    border: 1px solid #ff004f;
+    color: #fff;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background 0.3s, color 0.3s;
+    display: inline-block;
+    margin-top: 30px;
+}
+.btn.btn2:hover{
+    background: #ff004f;
+    color: #fff;
+}
+
+.contact-right form{
+    display: flex;
+    flex-direction: column;
+}
+.contact-right form input, .contact-right form textarea{
+    background: #1a1a1a;
+    border: none;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+    resize: none;
+}
+.contact-right form input::placeholder, .contact-right form textarea::placeholder{
+    color: #666;
+}
+.contact-right form input:focus, .contact-right form textarea:focus{
+    outline: 2px solid #ff004f;
+}
+.copyright{
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #333;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #666;
+}
+nav .menu-icon, nav .close-icon{
+    display: none;
+} 
+
+
+/*------------------media queries------------------*/
+@media only screen and (max-width: 768px) {
+    nav ul li{
+        margin: 10px 10px;
+    }
+    #header{
+        background-image: url(''); /* Adjusted for smaller screens */
+        height: 80vh;
+        background-size: contain;
+        background-position: center top;
+        background-repeat: no-repeat;
+        
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 15px;
+    }
+    .header-text h1{
+        font-size: 20px;
+    }
+    nav .menu-icon, nav .close-icon{
+        display: block;
+        font-size: 25px;
+
+    }
+    nav ul{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        background: #262626; /* background so links are visible */
+        padding-top: 60px;
+        transition: right 0.3s ease;
+        text-align: left;
+        z-index: 100;
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .menu-icon {
+        position: absolute;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav ul .close-icon{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+
+    #about .row{
+        flex-direction: column;
+    }
+    .about-col-1 img{
+        width: 70%;
+        margin: auto;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 10px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-titles{
+        flex-direction: column;
+    }
+    .tab-links{
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+    #services .services-list{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 30px;
+    }
+    #portfolio .work-list{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 30px;
+    }
+    #contact .row{
+        flex-direction: column;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}   

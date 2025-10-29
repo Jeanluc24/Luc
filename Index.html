@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeanluc's Portofolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/31901f3f9e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+               <h1 class="logo"><span>J</span>eanluc.</h1>
+                <ul id ="MenuItems">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portofolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark close-icon" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars menu-icon" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>IT ENTHUSIAST</p>
+                <h1>
+                    Hi, I'm <span>Jean Luc</span><br>MUSENGAYEZU From Rwanda,
+            </div>
+        </div>
+    </div>
+<!---------------------- About Section ---------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/IMG_2536.JPG" >
+            </div>
+            <div class="about-col-2">
+               <h1 class="sub-title">About Me</h1>
+                <p>
+                 I am a passionate IT enthusiast with a strong background in Information Technology and software development. I love exploring new technologies and applying them to solve real-world problems. My goal is to continuously learn and grow in the field of IT while contributing to innovative projects.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                    <div id="skills" class="tab-contents active-tab">
+                        <ul>
+                            <li><span>Full-Stack Development</span><br>Python, Java, C++, HTML, CSS, JavaScript, Node.js</li>
+                            <li><span>IT Coordination & Support</span><br>System Administration, Technical Support, IT Infrastructure</li>
+                            <li><span>Database & Cloud Systems</span><br>MySQL, MongoDB, Azure Cloud Services</li>
+                            <li><span>ICT4D & MEL</span><br>Monitoring & Evaluation, Data Analysis, Social Impact Technology</li>
+                            <li><span>Version Control & DevOps</span><br>Git, GitHub, Collaborative Development</li>
+                            <li><span>Web & Data Systems</span><br>Responsive Web Design, Data Systems Architecture</li>
+                        </ul>
+                    </div>
+                    <div id="experience" class="tab-contents">
+                        <ul>
+                            <li><span>Jun 2025 - Present</span><br>ICT4D Professional Intern at WaterAid Rwanda</li>
+                            <li><span>May 2025 - Jun 2025</span><br>ICT4D Academic Intern at WaterAid Rwanda</li>
+                            <li><span>Jan 2022 - Jun 2023</span><br>Tech Systems Specialist at KK Security Ltd, a GardaWorld Company</li>
+                            <li><span>May 2019 - Dec 2020</span><br>Technical Professional at Ameki color Rwanda</li>
+                        </ul>
+                    </div>
+                    <div id="education" class="tab-contents">
+                        <ul>
+                            <li><span>2022 - 2025</span><br>Bachelor of Science - B.Sc, Business Information Technology at University of Rwanda</li>
+                            <li><span>2018 - 2021</span><br>Electronics Services, At Saint Emmanuel School Complex</li>
+                            <li><span>2023 - 2025</span><br>Software Engineering, Software Engineer at African Leadership Experience</li>
+                            <li><span>2024</span><br>Certificate of Completion in Virtual Assistant from African Leadership Experience</li>
+                            <li><span>2024</span><br>Certificate of Completion in Ai Augmented Professional Skills from African Leadership Experience</li>
+                        </ul>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------------------- End of About Section ---------------------- -->
+ <!-- --------------------- Services ---------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services I Offer</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h3>Web Development</h3>
+                <p>Building responsive and user-friendly websites using modern technologies like HTML, CSS, JavaScript, and frameworks such as React and Node.js.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-server"></i>
+                <h3>IT Support & Coordination</h3>
+                <p>Providing technical support, managing IT infrastructure, and ensuring smooth operation of IT systems within organizations.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h3>Database Management</h3>
+                <p>Designing, implementing, and maintaining databases using MySQL and MongoDB to ensure efficient data storage and retrieval.</p>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --------------------- End of Services ---------------------- -->
+<!-- --------------------- Portfolio Section ---------------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Recent Works</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/WhatsApp Image 2025-10-20 at 12.12.32.jpeg" >
+                <div class="layer">
+                    <h3>Project Title 1</h3>
+                    <p>Brief description of the project highlighting key features and technologies used.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/IMG_2536.JPG" >
+                <div class="layer">
+                    <h3>Project Title 2</h3>
+                    <p>Brief description of the project highlighting key features and technologies used.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/IMG_2536.JPG" >
+                <div class="layer">
+                    <h3>Project Title 3</h3>
+                    <p>Brief description of the project highlighting key features and technologies used.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-- --------------------- End of Portfolio Section ---------------------- -->
+<!-- --------------------- Contact Section ---------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>musejnluc02@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>+250 788 326 362</p>
+                <p>Rwanda</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Images/Jean_Luc_MUSENGAYEZU_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea rows="6" name="Message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; 2024 Jeanluc. All Rights Reserved.</p>
+    </div>
+</div>
+<!-- --------------------- End of Contact Section ---------------------- -->
+<script>
+ function opentab(tabname){
+        let tablinks = document.getElementsByClassName("tab-links");
+        let tabcontents = document.getElementsByClassName("tab-contents");
+
+        for(let tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(let tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+
+    }
+</script>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    function openmenu(){
+        MenuItems.style.right = "0";
+    }
+    function closemenu(){
+        MenuItems.style.right = "-200px";
+    }
+</script>
+
+</body>
+</html> 
