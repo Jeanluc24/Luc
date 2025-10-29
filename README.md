@@ -32,7 +32,7 @@ A JavaScript function toggles between a **menu icon** (`☰`) and a **close icon
 
 ---
 ## 🔗 Live Demo
-👉 [View My Portfolio](https://jeanluc24.github.io/luc/)
+👉 [View My Portfolio](https://jeanluc24.github.io/Luc/)
 
 ## 🧩 Folder Structure
 
@@ -49,7 +49,7 @@ portfolio/
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Jeanluc24/my_portfolio.git
+   git clone https://github.com/Jeanluc24/Luc.git
 
   https://<Jeanluc24>.github.io/my_portfolio/
 
