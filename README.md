@@ -31,6 +31,8 @@ The website uses a **media query (`@media only screen and (max-width: 768px)`)**
 A JavaScript function toggles between a **menu icon** (`☰`) and a **close icon** (`✖`) to display or hide navigation links in mobile view.
 
 ---
+## 🔗 Live Demo
+👉 [View My Portfolio](https://jeanluc24.github.io/Luc/)
 
 ## 🧩 Folder Structure
 
@@ -47,9 +49,9 @@ portfolio/
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Jeanluc24/my_portfolio.git
+   git clone https://github.com/Jeanluc24/Luc.git
 
-  https://<Jeanluc24>.github.io/my_portfolio/
+  https://<jeanluc24>.github.io/Luc/
 
   ## 📷 Preview
 
@@ -62,7 +64,7 @@ Here’s a quick look at my portfolio homepage:
 
 Musengayezu Jean Luc
 Junior Software Developer | Business Information Technology Student
-📧 Email: [musejnluc02@gmail.com.email@example.com
+📧 Email: [musejnluc02@gmail.com
 ]
 🌐 Portfolio: [link once deployed]
 💼 GitHub: https://github.com/Jeanluc24
