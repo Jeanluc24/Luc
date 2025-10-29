@@ -62,7 +62,7 @@ Here’s a quick look at my portfolio homepage:
 
 Musengayezu Jean Luc
 Junior Software Developer | Business Information Technology Student
-📧 Email: [musejnluc02@gmail.com.email@example.com
+📧 Email: [musejnluc02@gmail.com
 ]
 🌐 Portfolio: [link once deployed]
 💼 GitHub: https://github.com/Jeanluc24
