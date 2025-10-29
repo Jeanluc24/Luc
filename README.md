@@ -31,6 +31,8 @@ The website uses a **media query (`@media only screen and (max-width: 768px)`)**
 A JavaScript function toggles between a **menu icon** (`☰`) and a **close icon** (`✖`) to display or hide navigation links in mobile view.
 
 ---
+## 🔗 Live Demo
+👉 [View My Portfolio](https://jeanluc24.github.io/luc/)
 
 ## 🧩 Folder Structure
 
